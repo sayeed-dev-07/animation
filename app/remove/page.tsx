@@ -24,7 +24,10 @@ const Page = () => {
     const handleDelete = contextSafe((item: itemProp, targetDom: HTMLDivElement) => {
         gsap.to(targetDom, {
             opacity: 0,
-            y: -30,
+            y: -180,
+            rotate:360,
+            duration:.5,
+            ease:'power1.out',
             onComplete: () => removeItem(item)
         })
     })
