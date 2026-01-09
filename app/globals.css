@@ -24,3 +24,29 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Grid slots controlled by data-grid */
+
+.card[data-grid="img-0"] {
+  grid-area: 1 / 1 / 5 / 5; /* BIG */
+}
+
+.card[data-grid="img-1"] {
+  grid-area: 3 / 5 / 5 / 7;
+}
+
+.card[data-grid="img-2"] {
+  grid-area: 1 / 5 / 3 / 7;
+}
+
+.card[data-grid="img-3"] {
+  grid-area: 5 / 5 / 7 / 7;
+}
+
+.card[data-grid="img-4"] {
+  grid-area: 5 / 3 / 7 / 5;
+}
+
+.card[data-grid="img-5"] {
+  grid-area: 5 / 1 / 7 / 3;
+}

@@ -2,7 +2,7 @@
 'use client'
 
 import Box from '@/components/Box'
-import Text from '@/components/Text'
+
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import React, { useRef } from 'react'
