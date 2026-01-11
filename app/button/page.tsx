@@ -8,7 +8,7 @@ const page = () => {
         {/* BACKGROUND */}
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           {/* FILL — INSIDE BORDER */}
-          <div className="absolute top-1.25 bottom-1.25 left-1.25 right-2.25 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute top-1.25 opacity-0 group-hover:opacity-100 bottom-1.25 left-1.25 right-2.25 bg-black " />
 
           {/* TOP BORDER */}
           <div
@@ -49,7 +49,7 @@ const page = () => {
 
         {/* FOREGROUND */}
         <div className="relative z-10 flex h-full items-center justify-center">
-          <span className="font-medium text-2xl text-black transition-colors duration-300 group-hover:text-white">
+          <span className="font-medium text-2xl text-black  group-hover:text-white">
             くわしく
           </span>
         </div>
