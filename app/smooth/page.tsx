@@ -5,6 +5,7 @@ import { ScrollTrigger, ScrollSmoother } from 'gsap/all';
 import gsap, { clamp } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -24,8 +25,8 @@ const Page = () => {
         //     speed: 0.5,
         //     lag:(i)=> i * 0.2
         // })
-        gsap.to('.w-24',{
-            rotate:  360,
+        gsap.to('.w-24', {
+            rotate: 360,
             scrollTrigger: {
                 trigger: '.w-24',
                 start: 'center center',
@@ -33,8 +34,8 @@ const Page = () => {
                 scrub: true,
             }
         })
-        gsap.to('.box2',{
-            rotate:  360,
+        gsap.to('.box2', {
+            rotate: 360,
             scrollTrigger: {
                 trigger: '.box2',
                 start: 'center center',
@@ -44,7 +45,7 @@ const Page = () => {
             }
         })
 
-        
+
     })
 
     const handleClick = contextSafe((name: string) => {
@@ -75,8 +76,17 @@ const Page = () => {
                     <div data-speed='clamp(1.2)' className='w-24 h-24 bg-slate-400 rounded-md'></div>
                     <div data-speed='clamp(1)' className='w-24 special h-24 bg-slate-400 rounded-md'></div>
                     <div data-speed='clamp(1)' className='w-24 h-24 bg-slate-400 rounded-md'></div>
+                    
+
+
+
+                
+
                 </div>
+
+
             </div>
+
         </div>
     );
 };
